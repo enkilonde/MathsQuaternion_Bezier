@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cameras", "Cameras\Cameras.vcxproj", "{3F1E4694-6951-49C4-B20A-C8E74256EA14}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bezier", "Bezier\Bezier.vcxproj", "{0094B412-59FB-4C9E-98E6-F37AB8115562}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bezier2", "Bezier2\Bezier2.vcxproj", "{AC5FDBC5-EF87-4947-9168-496E5AD1FC0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F1E4694-6951-49C4-B20A-C8E74256EA14}.Debug|x64.ActiveCfg = Debug|x64
+		{3F1E4694-6951-49C4-B20A-C8E74256EA14}.Debug|x64.Build.0 = Debug|x64
+		{3F1E4694-6951-49C4-B20A-C8E74256EA14}.Debug|x86.ActiveCfg = Debug|Win32
+		{3F1E4694-6951-49C4-B20A-C8E74256EA14}.Debug|x86.Build.0 = Debug|Win32
+		{3F1E4694-6951-49C4-B20A-C8E74256EA14}.Release|x64.ActiveCfg = Release|x64
+		{3F1E4694-6951-49C4-B20A-C8E74256EA14}.Release|x64.Build.0 = Release|x64
+		{3F1E4694-6951-49C4-B20A-C8E74256EA14}.Release|x86.ActiveCfg = Release|Win32
+		{3F1E4694-6951-49C4-B20A-C8E74256EA14}.Release|x86.Build.0 = Release|Win32
+		{0094B412-59FB-4C9E-98E6-F37AB8115562}.Debug|x64.ActiveCfg = Debug|x64
+		{0094B412-59FB-4C9E-98E6-F37AB8115562}.Debug|x64.Build.0 = Debug|x64
+		{0094B412-59FB-4C9E-98E6-F37AB8115562}.Debug|x86.ActiveCfg = Debug|Win32
+		{0094B412-59FB-4C9E-98E6-F37AB8115562}.Debug|x86.Build.0 = Debug|Win32
+		{0094B412-59FB-4C9E-98E6-F37AB8115562}.Release|x64.ActiveCfg = Release|x64
+		{0094B412-59FB-4C9E-98E6-F37AB8115562}.Release|x64.Build.0 = Release|x64
+		{0094B412-59FB-4C9E-98E6-F37AB8115562}.Release|x86.ActiveCfg = Release|Win32
+		{0094B412-59FB-4C9E-98E6-F37AB8115562}.Release|x86.Build.0 = Release|Win32
+		{AC5FDBC5-EF87-4947-9168-496E5AD1FC0A}.Debug|x64.ActiveCfg = Debug|x64
+		{AC5FDBC5-EF87-4947-9168-496E5AD1FC0A}.Debug|x64.Build.0 = Debug|x64
+		{AC5FDBC5-EF87-4947-9168-496E5AD1FC0A}.Debug|x86.ActiveCfg = Debug|Win32
+		{AC5FDBC5-EF87-4947-9168-496E5AD1FC0A}.Debug|x86.Build.0 = Debug|Win32
+		{AC5FDBC5-EF87-4947-9168-496E5AD1FC0A}.Release|x64.ActiveCfg = Release|x64
+		{AC5FDBC5-EF87-4947-9168-496E5AD1FC0A}.Release|x64.Build.0 = Release|x64
+		{AC5FDBC5-EF87-4947-9168-496E5AD1FC0A}.Release|x86.ActiveCfg = Release|Win32
+		{AC5FDBC5-EF87-4947-9168-496E5AD1FC0A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

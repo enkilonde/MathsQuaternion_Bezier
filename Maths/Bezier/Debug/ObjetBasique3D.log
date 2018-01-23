@@ -1,0 +1,22 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ObjetBasique3D.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Cameras.cpp
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\common\mat4.h(55): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\common\mat4.h(65): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\common\mat4.h(75): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\common\mat4.h(85): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\common\mat4.h(86): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\common\mat4.h(112): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\common\mat4.h(217): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\common\mat4.h(218): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\data\dragondata.h(4): warning C4838: la conversion de 'double' en 'float' requiert une conversion restrictive
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\data\dragondata.h(4): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\objetbasique3d\cameras.cpp(59): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\objetbasique3d\cameras.cpp(60): warning C4244: 'initialisation' : conversion de 'float' en 'int', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\objetbasique3d\cameras.cpp(198): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\objetbasique3d\cameras.cpp(268): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
+c:\users\vincent\desktop\esgi 3djv\opengl\cc2\opengl1\objetbasique3d\cameras.cpp(272): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
+  Génération de code en cours...
+  Ignoré... (aucune modification pertinente détectée)
+  EsgiShader.cpp
+  ObjetBasique3D.vcxproj -> C:\Users\Vincent\Desktop\ESGI 3DJV\OpenGL\CC2\OpenGL1\Debug\Cameras.exe
+  ObjetBasique3D.vcxproj -> C:\Users\Vincent\Desktop\ESGI 3DJV\OpenGL\CC2\OpenGL1\Debug\Cameras.pdb (Full PDB)

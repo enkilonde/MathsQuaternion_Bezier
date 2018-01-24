@@ -4,7 +4,10 @@
 
 class bezier{
 public:
-	int precision;
+
+    Quat Quaternion;
+    
+    int precision;
 	bool showControlPoints;
 	bezier(){
 		precision = 5;

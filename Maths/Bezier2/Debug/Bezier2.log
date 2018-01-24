@@ -1,21 +1,37 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Bezier.vcxproj, Cameras.vcxproj, ObjetBasique3D.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MyQuaternion.cpp
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(40): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(71): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(75): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(118): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(119): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(128): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(135): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(142): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\myquaternion.cpp(172): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   main.cpp
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\main.cpp(31): warning C4305: 'initializing': truncation from 'double' to 'float'
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\main.cpp(115): warning C4305: '-=': truncation from 'double' to 'float'
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\main.cpp(118): warning C4305: '+=': truncation from 'double' to 'float'
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\main.cpp(121): warning C4305: '+=': truncation from 'double' to 'float'
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\main.cpp(124): warning C4305: '-=': truncation from 'double' to 'float'
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\main.cpp(136): warning C4305: '-=': truncation from 'double' to 'float'
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\main.cpp(139): warning C4305: '+=': truncation from 'double' to 'float'
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\main.cpp(142): warning C4305: '+=': truncation from 'double' to 'float'
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\main.cpp(145): warning C4305: '-=': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\main.cpp(31): warning C4305: 'initializing': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\main.cpp(96): warning C4305: '-=': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\main.cpp(99): warning C4305: '+=': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\main.cpp(102): warning C4305: '+=': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\main.cpp(105): warning C4305: '-=': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\main.cpp(117): warning C4305: '-=': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\main.cpp(120): warning C4305: '+=': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\main.cpp(123): warning C4305: '+=': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\main.cpp(126): warning C4305: '-=': truncation from 'double' to 'float'
   bezierSurface.cpp
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\beziersurface.cpp(43): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\beziersurface.cpp(43): warning C4305: 'initializing': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\beziersurface.cpp(44): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\beziersurface.cpp(44): warning C4305: 'initializing': truncation from 'double' to 'float'
   bezierMath.cpp
   bezierFile.cpp
   bezierCurve.cpp
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\beziercurve.cpp(28): warning C4102: 'std': unreferenced label
-d:\documents\winrar extract\gaubert_camera\gaubert_camera\bezier2\beziercurve.cpp(94): warning C4102: 'std': unreferenced label
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\beziercurve.cpp(28): warning C4102: 'std': unreferenced label
+d:\documents\c++\mathsquaternion_bezier\maths\bezier2\beziercurve.cpp(94): warning C4102: 'std': unreferenced label
   EsgiShader.cpp
   Generating Code...
-  Bezier2.vcxproj -> D:\Documents\Winrar Extract\GAUBERT_Camera\GAUBERT_Camera\Debug\Bezier2.exe
-  Bezier2.vcxproj -> D:\Documents\Winrar Extract\GAUBERT_Camera\GAUBERT_Camera\Debug\Bezier2.pdb (Full PDB)
+  Bezier2.vcxproj -> D:\Documents\C++\MathsQuaternion_Bezier\Maths\Debug\Bezier2.exe
+  Bezier2.vcxproj -> D:\Documents\C++\MathsQuaternion_Bezier\Maths\Debug\Bezier2.pdb (Full PDB)

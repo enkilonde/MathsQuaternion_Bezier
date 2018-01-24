@@ -10,6 +10,8 @@ bezierSurface::bezierSurface(int uPoints, int vPoints, float **points[3]):bezier
 	this->uPoints = uPoints;
 	this->vPoints = vPoints;
 	controlPoints = points;
+
+    Quaternion = Quat();
 }
 
 void bezierSurface::setShowPoints(bool showControlPoints){
@@ -21,51 +23,30 @@ void bezierSurface::calSurface(){
 	for (int i = 0; i <= precision; i++){
 		curvePoints[i] = new float*[precision+1];
 	}
-	if(ALGORITHM == 0){
-		// de Casteljau's Algorithm
-		for(int ui = 0; ui <= precision; ui++) {
-			float u = float(ui)/float(precision);
-			for(int vi = 0; vi <= precision; vi++) {
-				float v = float(vi)/float(precision);
-				float **qPoints = new float*[uPoints+1];
-				for(int i=0; i <= uPoints; i++){
-					qPoints[i] = deCasteljau(controlPoints[i], vPoints, v);
-				}
-				curvePoints[ui][vi] = deCasteljau(qPoints, uPoints, u);
-			}
-		}
-	} else {
-		// by formula of Bezier curve
-		for(int ui = 0; ui <= precision; ui++){
-			float u = float(ui)/float(precision);
-			for(int vi = 0; vi <= precision; vi++){
-				float v = float(vi)/float(precision);
-				float *point = new float[3];
-				point[0] = 0;
-				point[1] = 0;
-				point[2] = 0;
-				for(int m = 0; m <= uPoints; m++){
-					for(int n =0; n<= vPoints; n++){
-						float bm = bernstein(m, uPoints, u);
-						float bn = bernstein(n, vPoints, v);
-						float b = bm * bn;
-						point[0] += b * controlPoints[m][n][0];
-						point[1] += b * controlPoints[m][n][1];
-						point[2] += b * controlPoints[m][n][2];
-					}
-				}
-				curvePoints[ui][vi] = point;
-			}
-		}
-	}
+    int n = 0;
+    // de Casteljau's
+    for (int ui = 0; ui <= precision; ui++) {
+        float u = float(ui) / float(precision);
+        for (int vi = 0; vi <= precision; vi++) {
+            float v = float(vi) / float(precision);
+            float **qPoints = new float*[uPoints + 1];
+            for (int i = 0; i <= uPoints; i++) {
+                qPoints[i] = deCasteljau(controlPoints[i], vPoints, v);
+            }
+            curvePoints[ui][vi] = deCasteljau(qPoints, uPoints, u);
+
+            
+
+        }
+    }
 }
 
 void bezierSurface::draw(){
 	this->calSurface();
 	glPushMatrix();
     bool color = false;
-    float black[] = {0.0, 0.0, 0.0};
-    float white[] = {1.0, 1.0, 1.0};
+    float black[] = {0.3, 0.3, 0.3};
+    float white[] = { 0.7, 0.7, 0.7};
 	float red[] = {1.0, 0.0, 0.0};
 	glColor3fv(black);
     for(int ui = 0; ui < precision; ui++) {

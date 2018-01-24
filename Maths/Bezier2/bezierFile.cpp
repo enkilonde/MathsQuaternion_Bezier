@@ -63,7 +63,7 @@ bezier *readBezierFile(char *filename)
 				int width = vPoints+1;
 				for(int n = 0; n <= vPoints; n++){
 					points1d[n] = points[m*width + n];
-					std::cout<<points[m*width + n][0]<<','<<points[m*width + n][1]<<','<<points[m*width + n][2]<<endl;
+					//std::cout<<points[m*width + n][0]<<','<<points[m*width + n][1]<<','<<points[m*width + n][2]<<endl;
 				}
 				points2d[m] = points1d;
 			}

@@ -90,12 +90,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../libs/GL;../libs/freeglut/include/GL;../libs/glew-2.0.0/include/GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../libs;../libs/GL;../libs/freeglut/include/GL;../libs/glew-2.0.0/include/GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>../libs/freeglut/lib;../libs/glew-2.0.0/lib/release/win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../libs;../libs/freeglut/lib;../libs/glew-2.0.0/lib/release/win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -156,11 +156,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Common\EsgiShader.cpp" />
+    <ClCompile Include="bezierCurve.cpp" />
+    <ClCompile Include="bezierFile.cpp" />
+    <ClCompile Include="bezierMath.cpp" />
+    <ClCompile Include="bezierSurface.cpp" />
     <ClCompile Include="Cameras.cpp" />
+    <ClCompile Include="MyQuaternion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\EsgiShader.h" />
     <ClInclude Include="..\common\mat4.h" />
+    <ClInclude Include="bezier.h" />
+    <ClInclude Include="bezierCurve.h" />
+    <ClInclude Include="bezierFile.h" />
+    <ClInclude Include="bezierMath.h" />
+    <ClInclude Include="bezierSurface.h" />
+    <ClInclude Include="MyQuaternion.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="basic.fs" />

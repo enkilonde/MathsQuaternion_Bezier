@@ -1,3 +1,19 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ObjetBasique3D.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Cameras.vcxproj -> D:\Documents\Winrar Extract\GAUBERT_Camera\GAUBERT_Camera\Debug\Cameras.exe
-  Cameras.vcxproj -> D:\Documents\Winrar Extract\GAUBERT_Camera\GAUBERT_Camera\Debug\Cameras.pdb (Full PDB)
+  Cameras.cpp
+d:\documents\c++\mathsquaternion_bezier\maths\common\mat4.h(55): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\common\mat4.h(65): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\common\mat4.h(75): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\common\mat4.h(85): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\common\mat4.h(86): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\common\mat4.h(112): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\common\mat4.h(217): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\common\mat4.h(218): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\data\dragondata.h(4): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+d:\documents\c++\mathsquaternion_bezier\maths\data\dragondata.h(4): warning C4305: 'initializing': truncation from 'double' to 'float'
+d:\documents\c++\mathsquaternion_bezier\maths\cameras\cameras.cpp(66): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\cameras\cameras.cpp(67): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\cameras\cameras.cpp(220): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\cameras\cameras.cpp(293): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\documents\c++\mathsquaternion_bezier\maths\cameras\cameras.cpp(297): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Cameras.vcxproj -> D:\Documents\C++\MathsQuaternion_Bezier\Maths\Debug\Cameras.exe
+  Cameras.vcxproj -> D:\Documents\C++\MathsQuaternion_Bezier\Maths\Debug\Cameras.pdb (Full PDB)

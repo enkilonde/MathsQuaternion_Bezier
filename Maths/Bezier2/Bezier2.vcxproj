@@ -161,6 +161,7 @@
     <ClCompile Include="bezierMath.cpp" />
     <ClCompile Include="bezierSurface.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyQuaternion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\EsgiShader.h" />
@@ -170,6 +171,7 @@
     <ClInclude Include="bezierFile.h" />
     <ClInclude Include="bezierMath.h" />
     <ClInclude Include="bezierSurface.h" />
+    <ClInclude Include="MyQuaternion.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="basic.fs" />

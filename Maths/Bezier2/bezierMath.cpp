@@ -17,7 +17,7 @@ float bernstein(int i, int n, float t){
 }
 
 float *deCasteljau(float **points, int degree, float t){
-		float *pointsQ = new float[(degree + 1) * 3]; // same as pointsQ[numPoints + 1][3]
+		float *pointsQ = new float[(degree + 1) * 3]; 
 		int Qwidth = 3;
 		for(int j = 0; j <= degree; j++){
 			pointsQ[j*Qwidth + 0] = points[j][0];

@@ -18,8 +18,15 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "../stb/stb_image.h"
 
+#include "bezier.h"
+#include "bezierCurve.h"
+#include "bezierSurface.h"
+#include "bezierFile.h"
+
 // format des vertices : X, Y, Z, ?, ?, ?, ?, ? = 8 floats
 #include "../data/DragonData.h"
+
+#include <vector>
 
 #if _MSC_VER
 uint32_t dragonVertexCount = _countof(DragonVertices);
@@ -68,6 +75,18 @@ int TimeSinceAppStartedInMS;
 int OldTime = 0;
 float DeltaTime;
 
+
+
+int precision = 5;
+bool showControlPoints = true;
+bezierSurface * b;
+
+
+
+
+
+
+
 bool Initialize()
 {
 	glewInit();
@@ -96,12 +115,15 @@ bool Initialize()
 	glGenBuffers(1, &VBO);
 	
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	glBufferData(GL_ARRAY_BUFFER, dragonVertexCount * sizeof(float), DragonVertices, GL_STATIC_DRAW);
+    //glBufferData(GL_ARRAY_BUFFER, dragonVertexCount * sizeof(float), DragonVertices, GL_STATIC_DRAW);
+
+    glBufferData(GL_ARRAY_BUFFER, b->vertices.size() * sizeof(int), &b->vertices[0], GL_STATIC_DRAW);
 
 	// rendu indexe
 	glGenBuffers(1, &IBO);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, dragonIndexCount *  sizeof(GLushort), DragonIndices, GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, b->curveIndexes.size() * sizeof(int), &b->curveIndexes[0], GL_STATIC_DRAW);
+    //glBufferData(GL_ELEMENT_ARRAY_BUFFER, dragonIndexCount *  sizeof(int), DragonIndices, GL_STATIC_DRAW);
 
 	// le fait de specifier 0 comme BO desactive l'usage des BOs
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
@@ -250,7 +272,10 @@ void animate()
 	glEnableVertexAttribArray(texcoords_location);
 
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
-	glDrawElements(GL_TRIANGLES, dragonIndexCount, GL_UNSIGNED_SHORT, nullptr);
+    //glDrawElements(GL_TRIANGLES, dragonIndexCount, GL_UNSIGNED_SHORT, nullptr);
+    //glDrawElements(GL_LINES, dragonIndexCount, GL_UNSIGNED_SHORT, nullptr);
+    //glDrawElements(GL_TRIANGLES, b->curveIndexes.size(), GL_UNSIGNED_SHORT, nullptr);
+    glDrawElements(GL_LINES, b->curveIndexes.size(), GL_UNSIGNED_SHORT, nullptr);
 
 	glDisableVertexAttribArray(position_location);
 	glDisableVertexAttribArray(normal_location);
@@ -354,6 +379,22 @@ void mouse(int x, int y)
 
 int main(int argc, const char* argv[])
 {
+
+
+
+
+    //Beziers
+    std::vector<char*> arguments;
+    arguments.push_back("1");
+    arguments.push_back("surfaceDemo");
+
+    b = readBezierFile(arguments[1]);
+    b->setPrecisions(5);
+    b->ShowControlPoints(showControlPoints);
+    b->calSurface();
+
+
+
 	// passe les parametres de la ligne de commande a glut
 	glutInit(&argc, (char**)argv);
 	// defini deux color buffers (un visible, un cache) RGBA
@@ -382,6 +423,15 @@ int main(int argc, const char* argv[])
 
 	if (Initialize() == false)
 		return -1;
+
+
+
+
+
+
+
+
+
 
 	glutIdleFunc(update);
 	glutDisplayFunc(animate);

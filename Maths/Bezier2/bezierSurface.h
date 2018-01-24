@@ -1,6 +1,8 @@
 #ifndef _BEZIERSURFACE_H_
 #define _BEZIERSURFACE_H_
 #include "bezier.h"
+#include "MyQuaternion.h"
+
 
 class bezierSurface : public bezier{
 private:
@@ -14,5 +16,8 @@ public:
 	void bezierSurface::setShowPoints(bool showControlPoints);
 	virtual void draw();
         ~bezierSurface();
+
+        /*Quat Quaternion;*/
+
 };
 #endif

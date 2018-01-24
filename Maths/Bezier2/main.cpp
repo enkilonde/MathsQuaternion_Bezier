@@ -72,6 +72,7 @@ void display(){
 
 void keyboard(unsigned char key, int x, int y)
 {
+
   switch (key) {
   case 'z':
          if(camera_r - 1.0/18.0 > 0)
@@ -80,33 +81,18 @@ void keyboard(unsigned char key, int x, int y)
   case 's':
          camera_r += 1.0;
          break;
-  case '1':
-         b->setPrecisions(1);
-         break;
-  case '2':
-         b->setPrecisions(4);
-         break;
-  case '3':
-         b->setPrecisions(6);
-         break;
+
   case '4':
-         b->setPrecisions(8);
-         break;
-  case '5':
-         b->setPrecisions(10);
-         break;
-  case '6':
-         b->setPrecisions(12);
-         break;
-  case '7':
-         b->setPrecisions(14);
-         break;
-  case '8':
-         b->setPrecisions(16);
-         break;
-  case '9':
-         b->setPrecisions(18);
-         break;
+      //b->Quaternion .Rotate(10f, 0, 0);
+      break;
+
+  case '+':
+      b->setPrecisions(b->precision+1);
+      break;
+  case '-':
+      if(b->precision > 2)
+        b->setPrecisions(b->precision-1);
+      break;
   case 'x':
 	     showControlPoints = !showControlPoints;
          b->controlPoints(showControlPoints);
